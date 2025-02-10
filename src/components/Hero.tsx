@@ -1,7 +1,6 @@
 "use client";
 import * as React from "react";
 import { motion } from "framer-motion";
-import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { MapIcon, PhoneIcon } from "lucide-react";
 import Link from "next/link";

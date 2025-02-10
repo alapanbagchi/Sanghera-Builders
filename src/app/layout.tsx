@@ -1,6 +1,4 @@
 import "./globals.css";
-import Link from "next/link";
-import Head from "next/head";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 

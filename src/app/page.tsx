@@ -1,10 +1,8 @@
 import { Approach } from "@/components/Approach";
 import { ContactUsSection } from "@/components/ContactUsSection";
-import { Footer } from "@/components/Footer";
 import { Hero } from "@/components/Hero";
 import { OurStory } from "@/components/OurStory";
 import { Slider } from "@/components/Slider";
-import Image from "next/image";
 
 export default function Home() {
   return (
