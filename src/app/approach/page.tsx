@@ -1,5 +1,5 @@
 "use client";
-import { delay, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import {
   Accordion,
   AccordionContent,
@@ -29,10 +29,6 @@ const fadeInVariant = {
   visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 1 } },
 };
 
-const fadeInVariantDelay = {
-  hidden: { opacity: 0, y: 20 },
-  visible: { opacity: 1, y: 0, transition: { duration: 1, delay: 2 } },
-};
 const ApproachPage = () => {
   const sentence =
     "We tailor every build to suit your needs, ensuring the final result is exactly what you envisioned. Whether it’s a new build, renovation, or commercial project, we work hand-in- hand with you throughout the entire process to deliver quality craftsmanship and lasting results.";
