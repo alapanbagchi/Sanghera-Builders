@@ -39,9 +39,9 @@ export const Approach = () => {
               transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
               className="font-['brandon-grotesque'] max-w-[600px] text-xl opacity-75"
             >
-              We bring your vision to life—whether it’s a home, business, or
-              renovation. And we do it by working hand-in-hand with you
-              throughout the entire experience.
+              {
+                "We bring your vision to life—whether it's a home, business, or renovation. And we do it by working hand-in-hand with you throughout the entire experience."
+              }
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}

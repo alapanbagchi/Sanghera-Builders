@@ -20,7 +20,7 @@ export const ContactUsSection = () => {
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
               className="text-[50px] tracking-wide max-[1000px]:text-[56px] text-center max-[720px]:text-[52px] max-[600px]:text-[35px] leading-[1.3]"
             >
-              It All Starts With an Idea <br /> Let's chat
+              It All Starts With an Idea <br /> {"Let's chat"}
             </motion.h2>
 
             {/* Button fades in from below (fade up) */}

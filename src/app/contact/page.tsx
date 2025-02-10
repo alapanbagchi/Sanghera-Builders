@@ -20,7 +20,7 @@ const Page = () => {
               ADDRESS
             </p>
             <h2 className="text-[32px] max-[1200px]:text-center tracking-wide max-[1000px]:text-[28px] max-[720px]:text-[24px] max-[600px]:text-[20px] leading-[1.3] max-w-[1280px]">
-              1831 North Lakewood Drive Coeur d'Alene, ID 83814
+              {"1831 North Lakewood Drive Coeur d'Alene, ID 83814"}
             </h2>
           </div>
           <div className="mx-auto w-full max-[1200px]:text-center flex flex-col max-[1660px]:w-full max-[1550px]:space-y-6 space-y-4">
@@ -49,7 +49,7 @@ const Page = () => {
       </div>
       <div className="p-20 flex flex-col max-w-[1280px] mx-auto gap-4 items-center max-[1000px]:p-4 text-center my-20 bg-primary">
         <p className="font-[brandon-grotesque] text-secondary font-semibold text-md uppercase">
-          We'd love to hear from you
+          {"We'd love to hear from you"}
         </p>
         <h2 className="text-[32px] text-white w-fit tracking-wide max-[1000px]:text-[38x] max-[720px]:text-[32px] max-[600px]:text-[28px] leading-[1.4] max-w-[1280px] mb-10">
           Rather fill out a form? That works for us, too.
