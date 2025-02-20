@@ -44,7 +44,7 @@ const Page = () => {
           className="w-1/2 max-[1200px]:w-full"
           width="100%"
           scrolling="no"
-          src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=University of Oxford&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.611044263371!2d-0.3953429!3d51.502004799999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487672bc91af10c7%3A0x7331db175d2c9fe7!2s126%20Scotts%20Rd%2C%20Southall%20UB2%205DG%2C%20UK!5e0!3m2!1sen!2sie!4v1740073488136!5m2!1sen!2sie"
         ></iframe>
       </div>
       <div className="p-20 flex flex-col max-w-[1280px] mx-auto gap-4 items-center max-[1000px]:p-4 text-center my-20 bg-primary">
