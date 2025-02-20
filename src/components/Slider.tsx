@@ -88,12 +88,12 @@ export const Slider: React.FC = () => {
     { name: "Sutton(Loft Conversion)", img: "/Slides/13.jpg" },
     { name: "Sutton(Landing)", img: "/Slides/14.jpg" },
     { name: "Sutton (Stairway)", img: "/Slides/15.jpg" },
-    { name: "Sutton (Bathroom 1)", img: "/Slides/16.jpg" },
-    { name: "Sutton (Bathroom 1)", img: "/Slides/17.jpg" },
-    { name: "Sutton (Bathroom 1)", img: "/Slides/18.jpg" },
-    { name: "Sutton (Bathroom 2)", img: "/Slides/19.jpg" },
-    { name: "Sutton (Bathroom 2)", img: "/Slides/20.jpg" },
-    { name: "Sutton (Bathroom 2)", img: "/Slides/21.jpg" },
+    { name: "Sutton (Bathroom-1)", img: "/Slides/16.jpg" },
+    { name: "Sutton (Bathroom-1)", img: "/Slides/17.jpg" },
+    { name: "Sutton (Bathroom-1)", img: "/Slides/18.jpg" },
+    { name: "Sutton (Bathroom-2)", img: "/Slides/19.jpg" },
+    { name: "Sutton (Bathroom-2)", img: "/Slides/20.jpg" },
+    { name: "Sutton (Bathroom-2)", img: "/Slides/21.jpg" },
   ];
   const [api, setApi] = React.useState<CarouselApi>();
 
@@ -160,7 +160,7 @@ export const Slider: React.FC = () => {
                     setLightboxText(home.name);
                   }}
                 />
-                <div className="font-[brandon-grotesque] bg-primary absolute -mt-20 w-fit px-4 py-2 text-white font-medium text-xl flex gap-2">
+                <div className="font-[brandon-grotesque] bg-primary absolute -mt-20 w-fit px-4 py-2 text-white font-medium text-xl flex gap-2 ">
                   <p className="text-secondary">{index + 1}</p>
                   <p>{home.name}</p>
                 </div>
