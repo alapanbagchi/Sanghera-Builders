@@ -6,8 +6,6 @@ import {
   CarouselApi,
   CarouselContent,
   CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
 } from "@/components/ui/carousel";
 import { ArrowLeft, ArrowRight, X } from "lucide-react";
 

@@ -2,7 +2,7 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { MapIcon, PhoneIcon } from "lucide-react";
+import { MapIcon } from "lucide-react";
 import Link from "next/link";
 
 // Updated TextFade without inView
