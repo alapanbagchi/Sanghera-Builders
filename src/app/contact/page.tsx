@@ -20,7 +20,7 @@ const Page = () => {
               ADDRESS
             </p>
             <h2 className="text-[32px] max-[1200px]:text-center tracking-wide max-[1000px]:text-[28px] max-[720px]:text-[24px] max-[600px]:text-[20px] leading-[1.3] max-w-[1280px]">
-              {"1831 North Lakewood Drive Coeur d'Alene, ID 83814"}
+              126 scotts road, <br /> Southall, <br /> Ub25dg
             </h2>
           </div>
           <div className="mx-auto w-full max-[1200px]:text-center flex flex-col max-[1660px]:w-full max-[1550px]:space-y-6 space-y-4">
@@ -28,7 +28,7 @@ const Page = () => {
               PHONE
             </p>
             <h2 className="text-[32px] max-[1200px]:text-center tracking-wide max-[1000px]:text-[28px] max-[720px]:text-[24px] max-[600px]:text-[20px] leading-[1.3] max-w-[1280px]">
-              (208) 664-9171
+              +447427507114
             </h2>
           </div>
           <div className="mx-auto w-full max-[1200px]:text-center flex flex-col max-[1660px]:w-full max-[1550px]:space-y-6 space-y-4">
@@ -36,7 +36,7 @@ const Page = () => {
               HOURS
             </p>
             <h2 className="text-[32px] tracking-wide max-[1000px]:text-[28px] max-[720px]:text-[24px] max-[600px]:text-[20px] leading-[1.3] max-w-[1280px] max-[1200px]:text-center">
-              8PM-4PM Monday - Friday
+              8AM-4PM Monday - Saturday
             </h2>
           </div>
         </div>

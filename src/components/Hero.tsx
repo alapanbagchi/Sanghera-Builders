@@ -70,14 +70,6 @@ export const Hero = () => {
     <div className="relative w-full h-[100vh]">
       {/* Overlay Content */}
       <div className="absolute top-0 z-10 text-white w-full h-full flex flex-col items-center justify-center gap-4">
-        <motion.p
-          initial={{ x: 20, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-          className="text-sm opacity-80 font-['brandon-grotesque'] max-[600px]:text-[12px]"
-        >
-          CUSTOM HOME BUILDING IN THE UNITED KINGDOM
-        </motion.p>
         <motion.h1 className="text-[64px] max-[1000px]:text-[56px] max-[720px]:text-[52px] max-[600px]:text-[35px] text-center leading-[1.3]">
           {/* Ensures text stays together on small screens */}
           <div className="block">
@@ -110,15 +102,6 @@ export const Hero = () => {
           className="flex gap-5 pt-6 max-[600px]:flex-col max-[600px]:items-center"
         >
           <Button asChild>
-            <Link href="contact">
-              <PhoneIcon
-                className="text-secondary font-medium"
-                strokeWidth={2}
-              />
-              Contact Us
-            </Link>
-          </Button>
-          <Button asChild>
             <Link href="/approach">
               <MapIcon className="text-secondary font-medium" strokeWidth={2} />
               Discover our approach
@@ -129,7 +112,7 @@ export const Hero = () => {
       {/* Background Image Container */}
       <div className="relative top-0 w-full h-full overflow-hidden bg-primary">
         <motion.img
-          className="object-cover w-full h-full brightness-75"
+          className="object-cover w-full h-full brightness-75 rotate-[5deg] scale-[1.18]"
           src="/Hero_Banner.jpg"
           alt="Aspens Home Hero Banner"
           initial={{ opacity: 0 }}

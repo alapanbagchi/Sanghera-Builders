@@ -1,6 +1,7 @@
 "use client";
 import { Button } from "./ui/button";
 import { motion, useInView, useScroll, useTransform } from "framer-motion";
+import Link from "next/link";
 import { useRef } from "react";
 
 export const OurStory = () => {
@@ -15,7 +16,7 @@ export const OurStory = () => {
   const parallax = useTransform(scrollYProgress, [0, 1], [-60, 60]);
 
   return (
-    <div className="w-full h-[600px] max-[1000px]:h-fit pt-24" ref={ref}>
+    <div className="w-full h-[600px] max-[1000px]:h-fit pt-24 -mb-36" ref={ref}>
       <div className="flex max-[1000px]:pt-20 justify-center bg-[#434236] max-[1000px]:flex-col my-auto relative h-full max-w-[1050px] mx-auto">
         {/* Text Section */}
         <div className="flex items-center justify-center max-[600px]:pl-4 pl-36 text-white">
@@ -41,8 +42,8 @@ export const OurStory = () => {
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
             >
-              <Button className="text-[#E8E1DC]" variant="secondary">
-                Get to know us
+              <Button className="text-[#E8E1DC]" variant="secondary" asChild>
+                <Link href="/our-story">Get to know us</Link>
               </Button>
             </motion.div>
           </div>

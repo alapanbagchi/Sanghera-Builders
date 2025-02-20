@@ -1,5 +1,5 @@
 "use client";
-import { Menu, Phone, XIcon } from "lucide-react";
+import { ContactIcon, Menu, Phone, XIcon } from "lucide-react";
 import { Button } from "./ui/button";
 import { useState } from "react";
 import Link from "next/link";
@@ -9,7 +9,7 @@ export const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
   const links = [
     { text: "Discover our Approach", href: "approach" },
-    { text: "About Us", href: "our-story" },
+    { text: "Get To Know Us", href: "our-story" },
     { text: "Contact Us", href: "contact" },
   ];
 
@@ -19,14 +19,22 @@ export const Navbar = () => {
         <ul className="flex items-center">
           <li className="mr-6 mt-3">
             <Link href={"/"}>
-              <img src="/logo.svg" alt="Logo" />
+              <img src="/logo.svg" alt="Logo" width={180} />
             </Link>
           </li>
           <li className="ml-auto mr-6 max-[600px]:mr-3">
             <Button variant="outline" asChild>
-              <Link href={"/contact"}>
+              <Link href={"tel:+447427507114"}>
                 <Phone />
-                <p className="max-[600px]:hidden">CONTACT US</p>
+                <p className="max-[600px]:hidden">CALL US</p>
+              </Link>
+            </Button>
+          </li>
+          <li className="z-10 mr-4">
+            <Button variant="outline" asChild>
+              <Link href="/contact">
+                <ContactIcon />
+                <p className="max-[600px]:hidden">Contact Us</p>
               </Link>
             </Button>
           </li>
@@ -83,7 +91,7 @@ export const Navbar = () => {
                 className="w-1/3 max-[1200px]:hidden"
               >
                 <img
-                  src="https://www.aspenhomes.com/wp-content/uploads/2021/10/004_Wine-Room-5-200x300.jpg"
+                  src="Slides/2.jpg"
                   alt=""
                   className="w-full h-full object-cover brightness-75"
                 />

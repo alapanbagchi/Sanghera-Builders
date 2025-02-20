@@ -79,19 +79,9 @@ const Page = () => {
         </motion.h2>
         <div className="flex gap-10 w-full justify-center max-[1200px]:flex-col px-8">
           <motion.img
-            src="https://www.aspenhomes.com/wp-content/uploads/2022/01/exterior.jpg"
+            src="Slides/5.jpg"
             alt=""
-            className="w-[595px] h-[420px] object-cover max-[1200px]:w-full max-[1200px]:h-fit"
-            variants={fadeInVariant}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-          />
-
-          <motion.img
-            src="https://www.aspenhomes.com/wp-content/uploads/2022/01/exterior.jpg"
-            alt=""
-            className="w-[595px] h-[420px] object-cover max-[1200px]:w-full max-[1200px]:h-fit"
+            className="w-[900px] h-[550px] object-cover max-[1200px]:w-full max-[1200px]:h-fit"
             variants={fadeInVariantDelay}
             initial="hidden"
             whileInView="visible"
