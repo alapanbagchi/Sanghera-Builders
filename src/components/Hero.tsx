@@ -70,7 +70,7 @@ export const Hero = () => {
     <div className="relative w-full h-[100vh]">
       {/* Overlay Content */}
       <div className="absolute top-0 z-10 text-white w-full h-full flex flex-col items-center justify-center gap-4">
-        <motion.h1 className="text-[64px] max-[1000px]:text-[56px] max-[720px]:text-[52px] max-[600px]:text-[35px] text-center leading-[1.3]">
+        <motion.h1 className="text-[62px] max-[1000px]:text-[54px] max-[720px]:text-[52px] max-[600px]:text-[32px] text-center leading-[1.3]">
           {/* Ensures text stays together on small screens */}
           <div className="block">
             <TextFade

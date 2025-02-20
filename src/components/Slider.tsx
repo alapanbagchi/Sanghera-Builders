@@ -100,18 +100,18 @@ export const Slider: React.FC = () => {
   return (
     <div
       ref={ref}
-      className="flex h-fit max-w-[1640px] ml-auto max-[1000px]:flex-col pl-10 max-[600px]:px-4"
+      className="max-[500px]:w-[100vw] overflow-x-hidden flex h-fit max-w-[1640px] ml-auto max-[1000px]:flex-col pl-10 max-[600px]:px-4"
     >
       <div className="pr-10 h-min flex flex-col justify-center mt-24 max-[1000px]:mt-0 space-y-4">
         <motion.p
           initial={{ x: 20, opacity: 0 }}
           animate={isInView ? { x: 0, opacity: 1 } : { x: -100, opacity: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-          className="text-md text-secondary font-semibold font-['brandon-grotesque'] max-[600px]:text-[15px]"
+          className="text-md text-secondary font-semibold font-['brandon-grotesque'] max-[600px]:text-[15px] max-[600px]:text-center"
         >
           OUR PROJECTS
         </motion.p>
-        <motion.h2 className="text-[50px] pb-20 tracking-wide max-[1000px]:text-[56px] max-[720px]:text-[52px] max-[600px]:text-[35px] leading-[1.3]">
+        <motion.h2 className="text-[50px] pb-20 tracking-wide max-[1000px]:text-[56px] max-[600px]:pb-4 max-[720px]:text-[52px] max-[600px]:text-[35px] max-[600px]:text-center  leading-[1.3]">
           <StaggeredText
             text="Beautifully Built and Crafted with Care"
             staggerChildren={0.04}
@@ -122,7 +122,7 @@ export const Slider: React.FC = () => {
           initial={{ x: 20, opacity: 0 }}
           animate={isInView ? { x: 0, opacity: 1 } : { x: -100, opacity: 0 }}
           transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-          className="flex gap-2 mb-4 p-4 bg-input w-fit rounded-full"
+          className="flex gap-2 mb-4 p-4 bg-input w-fit rounded-full max-[600px]:mx-auto"
         >
           <button
             onClick={() => api?.scrollPrev()}
@@ -145,14 +145,14 @@ export const Slider: React.FC = () => {
         className="w-full h-full"
       >
         <Carousel className="w-full h-full" setApi={setApi}>
-          <CarouselContent className="w-full h-full space-x-2">
+          <CarouselContent className="w-full h-full space-x-2 ">
             {homes.map((home, index) => (
               <CarouselItem
                 key={index}
-                className="basis-1/3 max-[1600px]:basis-1/2 max-[1200px]:basis-full max-[1000px]:mt-10 w-full h-full"
+                className="basis-1/3 max-[530px]:w-full max-[1600px]:basis-1/2 max-[1200px]:basis-full max-[1000px]:mt-10 w-full h-full"
               >
                 <img
-                  className="object-cover max-[1600px]:w-[500px] max-[1600px]:w-full w-[400px] h-[520px] cursor-pointer"
+                  className="object-cover max-[1600px]:w-full w-[400px] h-[520px] cursor-pointer"
                   src={home.img}
                   alt="Aspens Home Hero Banner"
                   onClick={() => {

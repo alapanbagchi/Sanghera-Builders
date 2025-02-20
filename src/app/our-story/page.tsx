@@ -119,7 +119,7 @@ const Page = () => {
             <div className="flex items-center w-full max-[1500px]:w-full max-[1500px]:mt-20">
               <motion.img
                 className="object-cover w-full max-w-[600px] max-[1500px]:max-w-none h-[800px] max-[1500px]:w-full max-[1600px]:ml-0 ml-auto"
-                src="https://www.aspenhomes.com/wp-content/uploads/2022/01/28Master-bedroom.jpg-SMALL.jpg"
+                src="team.jpg"
                 alt=""
                 variants={fadeInVariant}
                 initial="hidden"
