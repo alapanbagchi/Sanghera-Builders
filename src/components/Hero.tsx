@@ -2,7 +2,7 @@
 import * as React from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { MapIcon } from "lucide-react";
+import { MapIcon, PhoneIcon } from "lucide-react";
 import Link from "next/link";
 
 // Updated TextFade without inView
@@ -112,7 +112,7 @@ export const Hero = () => {
       {/* Background Image Container */}
       <div className="relative top-0 w-full h-full overflow-hidden bg-primary">
         <motion.img
-          className="object-cover w-full h-full brightness-75 rotate-[5deg] scale-[1.18]"
+          className="object-cover w-full h-full brightness-75 rotate-[5deg] scale-[1.2]"
           src="/Hero_Banner.jpg"
           alt="Aspens Home Hero Banner"
           initial={{ opacity: 0 }}

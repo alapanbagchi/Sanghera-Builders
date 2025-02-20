@@ -24,7 +24,7 @@ export const Navbar = () => {
           </li>
           <li className="ml-auto mr-6 max-[600px]:mr-3">
             <Button variant="outline" asChild>
-              <Link href={"tel:+447427507114"}>
+              <Link href={"tel:+1-800-555-5555"}>
                 <Phone />
                 <p className="max-[600px]:hidden">CALL US</p>
               </Link>
