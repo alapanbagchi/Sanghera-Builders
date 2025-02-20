@@ -19,13 +19,13 @@ export const OurStory = () => {
     <div className="w-full h-[600px] max-[1000px]:h-fit pt-24 -mb-36" ref={ref}>
       <div className="flex max-[1000px]:pt-20 justify-center bg-[#434236] max-[1000px]:flex-col my-auto relative h-full max-w-[1050px] mx-auto">
         {/* Text Section */}
-        <div className="flex items-center justify-center max-[600px]:pl-4 pl-36 text-white">
+        <div className="flex items-center justify-center max-[600px]:pl-0 pl-36 text-white">
           <div className="w-[550px] max-[600px]:w-full space-y-8">
             <motion.p
               initial={{ opacity: 0, y: -10 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-              className="font-[brandon-grotesque] -mb-4 text-secondary font-semibold text-md uppercase"
+              className="font-[brandon-grotesque] -mb-4 text-secondary font-semibold text-md uppercase max-[600px]:text-center"
             >
               OUR STORY
             </motion.p>
@@ -33,7 +33,7 @@ export const OurStory = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
-              className="text-[50px] tracking-wide max-[1000px]:text-[56px] max-[720px]:text-[52px] max-[600px]:text-[35px] leading-[1.3]"
+              className="text-[50px] tracking-wide max-[1000px]:text-[56px] max-[720px]:text-[52px] max-[600px]:text-[35px] leading-[1.3] max-[600px]:text-center"
             >
               Bringing Visions to Life for Over 15 Years.
             </motion.h2>
@@ -41,6 +41,7 @@ export const OurStory = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
+              className="max-[600px]:text-center"
             >
               <Button className="text-[#E8E1DC]" variant="secondary" asChild>
                 <Link href="/our-story">Get to know us</Link>

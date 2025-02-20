@@ -102,7 +102,7 @@ export const Slider: React.FC = () => {
       ref={ref}
       className="max-[500px]:w-[100vw] overflow-x-hidden flex h-fit max-w-[1640px] ml-auto max-[1000px]:flex-col pl-10 max-[600px]:px-4"
     >
-      <div className="pr-10 h-min flex flex-col justify-center mt-24 max-[1000px]:mt-0 space-y-4">
+      <div className="pr-10 max-[600px]:pr-0 h-min flex flex-col justify-center mt-24 max-[1000px]:mt-0 space-y-4">
         <motion.p
           initial={{ x: 20, opacity: 0 }}
           animate={isInView ? { x: 0, opacity: 1 } : { x: -100, opacity: 0 }}
@@ -160,7 +160,7 @@ export const Slider: React.FC = () => {
                     setLightboxText(home.name);
                   }}
                 />
-                <div className="font-[brandon-grotesque] bg-primary absolute -mt-20 w-fit px-4 py-2 text-white font-medium text-xl flex gap-2 ">
+                <div className="font-[brandon-grotesque] bg-primary absolute -mt-20 min-w-[250px] px-4 py-2 text-white font-medium text-xl flex gap-2 ">
                   <p className="text-secondary">{index + 1}</p>
                   <p>{home.name}</p>
                 </div>

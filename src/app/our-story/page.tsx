@@ -50,7 +50,7 @@ const Page = () => {
       </div>
       <div className="mx-auto w-full mt-20 flex items-center flex-col max-[1660px]:w-full max-[1550px]:space-y-6 space-y-10">
         <motion.p
-          className="font-[brandon-grotesque] w-fit text-secondary font-semibold text-md uppercase"
+          className="font-[brandon-grotesque] w-fit text-secondary font-semibold text-md uppercase max-[500px]:text-center"
           variants={textVariant}
           initial="hidden"
           animate="visible"

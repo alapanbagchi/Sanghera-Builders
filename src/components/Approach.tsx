@@ -21,7 +21,7 @@ export const Approach = () => {
               initial={{ opacity: 0, y: -10 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-              className="font-[brandon-grotesque] text-secondary font-semibold text-md uppercase"
+              className="font-[brandon-grotesque] text-secondary font-semibold text-md uppercase max-[600px]:text-center"
             >
               Our Approach
             </motion.p>
@@ -29,7 +29,7 @@ export const Approach = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
-              className="text-[50px] tracking-wide max-[1000px]:text-[56px] max-[720px]:text-[52px] max-[600px]:text-[35px] leading-[1.3]"
+              className="text-[50px] tracking-wide max-[1000px]:text-[56px] max-[720px]:text-[52px] max-[600px]:text-[35px] leading-[1.3] max-[600px]:text-center"
             >
               Uniquely Designed for What Matters to You
             </motion.h2>
@@ -37,18 +37,19 @@ export const Approach = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 1, ease: "easeOut", delay: 0.6 }}
-              className="font-['brandon-grotesque'] max-w-[600px] text-xl opacity-75"
+              className="font-['brandon-grotesque'] max-w-[600px] text-xl opacity-75 max-[600px]:text-center"
             >
               {
                 "We bring your vision to life—whether it's a home, business, or renovation. And we do it by working hand-in-hand with you throughout the entire experience."
               }
             </motion.p>
             <motion.div
+              className="max-[600px]:mx-auto max-[600px]:w-fit"
               initial={{ opacity: 0, y: 20 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 1, ease: "easeOut", delay: 0.8 }}
             >
-              <Button className="text-[#E8E1DC]">
+              <Button className="text-[#E8E1DC] max-[600px]:mx-auto">
                 <Link href="/approach">Discover our approach</Link>
               </Button>
             </motion.div>
