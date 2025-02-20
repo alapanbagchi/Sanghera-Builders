@@ -6,7 +6,6 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import Image from "next/image";
 
 const textVariant = {
   hidden: { opacity: 0, x: -50 },
@@ -84,8 +83,7 @@ const ApproachPage = () => {
   return (
     <div className="h-full">
       <div className="w-full h-[350px] relative flex justify-center items-center">
-        <Image
-          fill={true}
+        <img
           className="w-full h-full object-cover brightness-50"
           src="https://www.aspenhomes.com/wp-content/themes/aspenhomes/dist/images/trees-bg-full.jpg"
           alt=""
@@ -137,7 +135,7 @@ const ApproachPage = () => {
               initial="hidden"
               animate="visible"
             >
-              <Image fill={true} src={block.img} alt="" />
+              <img src={block.img} alt="" />
               <h3 className="text-[16px] uppercase font-semibold font-[brandon-grotesque] w-fit tracking-wide max-w-[1280px] text-center px-8 leading-[1.3]">
                 {block.title}
               </h3>
@@ -166,8 +164,7 @@ const ApproachPage = () => {
           </motion.h3>
           <div className="flex gap-20 h-full">
             <div className="w-[500px] h-[600px] max-[1000px]:hidden">
-              <Image
-                fill={true}
+              <img
                 className="object-cover w-full h-full"
                 src="/Slides/1.jpg"
                 alt=""
