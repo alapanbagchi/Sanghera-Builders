@@ -13,6 +13,7 @@ import {
   SelectValue,
 } from "./ui/select";
 import { ContactUsFormAction } from "./ContactUsFormAction";
+import { toast } from "sonner";
 
 const formSchema = z.object({
   name: z.string(),
@@ -34,7 +35,7 @@ export const ContactUsForm = () => {
       message: "",
     },
   });
-  const onSubmit = async () => {
+  const onSubmit = async (e: any) => {
     const res = await ContactUsFormAction(
       form.getValues("email"),
       form.getValues("name"),
@@ -43,7 +44,12 @@ export const ContactUsForm = () => {
       form.getValues("property_location"),
       form.getValues("message")
     );
-    console.log(res);
+    if (res.success) {
+      toast.success("Message sent successfully");
+    }
+    if (res.error) {
+      toast.error(res.error);
+    }
   };
   return (
     <Form {...form}>
